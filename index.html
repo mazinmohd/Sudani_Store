@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudani Phone Store</title>
+    <link rel="icon" type="image/png" href="./images/small_icon2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Store Logo" class="logo">
+                <div class="brand-text">
+                    <h1>Sudani Phone Store</h1>
+                    <p class="tagline">Your One-Stop Shop for Premium Smartphones</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#iphone">iPhone</a></li>
+                    <li><a href="#samsung">Samsung</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-container">
+                <div class="cart-icon" id="cartIcon">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <div class="cart-items" id="cartItems"></div>
+                    <div class="cart-total">
+                        Total: $<span class="total-amount" id="totalAmount">0.00</span>
+                    </div>
+                    <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="Home">
+        <section class="brand-section" id="iphone">
+            <h2>iPhone Models</h2>
+            <div class="phones-grid">
+                <div class="phone-card">
+                    <img src="./images/iphon14pro.jpg" alt="iPhone 14 Pro">
+                    <h3>iPhone 14 Pro</h3>
+                    <p>6.1" Super Retina XDR display, A16 Bionic chip</p>
+                    <p class="price">$999</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="phone-card">
+                    <img src="./images/iphon14.jpg" alt="iPhone 14">
+                    <h3>iPhone 14</h3>
+                    <p>6.1" Super Retina XDR display, A15 Bionic chip</p>
+                    <p class="price">$799</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="phone-card">
+                    <img src="./images/iphon13.jpg" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <p>6.1" Super Retina XDR display, A15 Bionic chip</p>
+                    <p class="price">$699</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section" id="samsung">
+            <h2>Samsung Models</h2>
+            <div class="phones-grid" id="samsung-grid">
+                <div class="phone-card">
+                    <img src="./images/s23ultra.jpg" alt="Samsung Galaxy S23 Ultra">
+                    <h3>Galaxy S23 Ultra</h3>
+                    <p>6.8" Dynamic AMOLED 2X, Snapdragon 8 Gen 2</p>
+                    <p class="price">$1199</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="phone-card">
+                    <img src="./images/s23+.jpg" alt="Samsung Galaxy S23+">
+                    <h3>Galaxy S23+</h3>
+                    <p>6.6" Dynamic AMOLED 2X, Snapdragon 8 Gen 2</p>
+                    <p class="price">$999</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="phone-card">
+                    <img src="./images/a53.jpg" alt="Samsung Galaxy A53">
+                    <h3>Galaxy A53</h3>
+                    <p>6.5" Super AMOLED, Exynos 1280</p>
+                    <p class="price">$449</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content" id="About">
+            <div class="footer-section company-info">
+                <img src="images/logo.png" alt="Store Logo" class="footer-logo">
+                <h3>Sudani Phone Store</h3>
+                <p>Your trusted source for premium smartphones and accessories since 2020.</p>
+            </div>
+            
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact-info" id="Contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +249 123 456 789</li>
+                    <li><i class="fas fa-envelope"></i> info@sudaniphone.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Khartoum, Sudan</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📱</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sudani Phone Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
